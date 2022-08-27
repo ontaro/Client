@@ -42,9 +42,9 @@ int main()
 
     // lee el archivo de configuracion
 
-    char puerto[4];
+    char puerto[5];
     char filePath[200];
-    char direccionIP[15];
+    char direccionIP[16];
     FILE *fd;
     // *filePath = "plat.jpg";
 
@@ -58,7 +58,7 @@ int main()
 
     // espera la entrada del usuario, path de la imagen
     printf("Ingrese la direccion IP: \n");
-    scanf("%15s", direccionIP);
+    scanf("%16s", direccionIP);
 
     printf("puerto: %s, path %s y direccion IP: %s \n", puerto, filePath, direccionIP);
 
@@ -85,7 +85,7 @@ int main()
     strcat( direccion, direccionIP );
     strcat( direccion, ":"  );
     strcat( direccion, puerto);
-    strcat( direccion, filePath);
+    strcat( direccion, "/archivo");
 
     printf("Direccion URL: %s \n", direccion);
 
