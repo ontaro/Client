@@ -60,7 +60,7 @@ int main()
     printf("Ingrese la direccion IP: \n");
     scanf("%16s", direccionIP);
 
-    printf("puerto: %s, path %s y direccion IP: %s \n", puerto, filePath, direccionIP);
+    printf("Puerto: %s, Path del archivo de texto %s y Direccion IP: %s \n", puerto, filePath, direccionIP);
 
     /* int width, height, channels;
 
@@ -75,10 +75,10 @@ int main()
     fd = fopen(filePath, "r"); /* open file to upload */
     if(fd == NULL)
     {
-        printf("error al cargar el archivo \n");
+        printf("Error al accesar al path \n");
         return 1;
     }
-    printf("archivo cargado \n");
+    //printf("archivo cargado \n");
 
     char direccion[35];
     strcpy( direccion, "http://" );
@@ -87,7 +87,7 @@ int main()
     strcat( direccion, puerto);
     strcat( direccion, "/archivo");
 
-    printf("Direccion URL: %s \n", direccion);
+    //printf("Direccion URL: %s \n", direccion);
 
     // pixeles
 
