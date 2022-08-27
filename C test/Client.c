@@ -72,8 +72,8 @@ int main()
         exit(1);
     }*/
 
-    fd = fopen(filePath, "rb"); /* open file to upload */
-    if(!fd)
+    fd = fopen(filePath, "r"); /* open file to upload */
+    if(fd == NULL)
     {
         printf("error al cargar el archivo \n");
         return 1;
