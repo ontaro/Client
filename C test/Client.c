@@ -82,12 +82,12 @@ int main()
 
     char direccion[35];
     strcpy( direccion, "http://" );
-    strcpy( direccion, direccionIP );
-    strcpy( direccion, ":"  );
-    strcpy( direccion, puerto );
-    strcpy( direccion, "/archivo" );
+    strcat( direccion, direccionIP );
+    strcat( direccion, ":"  );
+    strcat( direccion, puerto);
+    strcat( direccion, filePath);
 
-    printf("Direccion: %s \n", direccion);
+    printf("Direccion URL: %s \n", direccion);
 
     // pixeles
 
